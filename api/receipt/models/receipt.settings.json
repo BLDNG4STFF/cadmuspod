@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receipts",
+  "info": {
+    "name": "receipt"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "expense_date": {
+      "type": "date"
+    },
+    "total_amount": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "submitted_date": {
+      "type": "date"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "line_items": {
+      "type": "json"
+    }
+  }
+}
